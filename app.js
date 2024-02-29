@@ -13,10 +13,10 @@ app.get("/", (req, res) =>
   res.status(200).send('<h1>Hello</h1><a href="/api/v1/products">Go To API</a>')
 );
 
+app.use("/api/v1/products", mainRouter);
+
 app.use(errorHandlerMiddleware);
 app.use(notFound);
-
-app.use("/api/v1/products", mainRouter);
 
 const startServer = async () => {
   try {
