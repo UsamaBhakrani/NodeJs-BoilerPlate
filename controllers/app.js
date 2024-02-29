@@ -2,16 +2,17 @@ const getAllProducts = async (req, res) => {
   res.json({ hello: "hello" });
 };
 const getSingleProduct = async (req, res) => {
-  console.log("Get Single Products");
+  res.json({ hello: "Get Single Product" });
 };
 const deleteProduct = async (req, res) => {
-  console.log("Delete Product");
+  res.json({ hello: "Delete Product" });
 };
 const updateProduct = async (req, res) => {
-  console.log("update Product");
+  res.json({ hello: "Update Product" });
 };
 const createProduct = async (req, res) => {
-  console.log("Create Product");
+  res.json({ hello: "Create Product" });
+
 };
 
 module.exports = {
